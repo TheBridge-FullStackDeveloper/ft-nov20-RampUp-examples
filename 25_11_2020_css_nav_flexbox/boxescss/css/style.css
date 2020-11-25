@@ -1,0 +1,75 @@
+:root{
+    --borde:15px solid green;
+    --ancho:40%;
+}
+
+.cajita {
+    background-color: lightgrey;
+    width: var(--ancho);
+    border: var(--borde);
+    padding: 50px;
+    margin: 100px;
+}
+
+.cajita2 {
+    background-color: rgb(235, 147, 147);
+    width: var(--ancho);
+    border: var(--borde);
+    padding: 50px;
+    margin: 200px 100px 20px 100px;
+}
+
+.relative {
+    position: relative;
+    width: 400px;
+    height: 200px;
+    border: 3px solid #73AD21;
+}
+  
+.absolute {
+    position: absolute;
+    top: 80px;
+    right: 10px;
+    width: 200px;
+    height: 100px;
+    border: 3px solid #0a0a09;
+}
+.cajita > h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.header2{ 
+    background-origin: padding-box;
+}
+.cajita > p{
+    width:50%;
+}
+
+/**** Flexbox *****/
+
+nav>ul>li {
+    display:inline;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(40, 195, 118);
+}
+  
+.flex-container > section {
+    background-color: #d8d2e9;
+    width: 100px;
+    margin: 10px;
+    padding:0px 10px 0px 10px;
+    position:relative;
+}
+.flex-container >section>div{
+    word-break:break-all;
+    margin-bottom: 100px;
+}
+.flex-container>section>img{
+    position: absolute;
+    width: 100%;
+    bottom:0px;
+    left:0px;
+}
