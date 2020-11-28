@@ -1,0 +1,73 @@
+header {
+  background-color: #7ac21f;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 100%;
+  /* width: 480px; */
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+}
+
+h1.main-title {
+  color: whitesmoke;
+  margin-top: 0;
+  padding: 2rem 0;
+}
+
+section.list-posts {
+  background-image: linear-gradient(red, yellow, blue);
+}
+
+article.post {
+  width: 94%;
+  padding: 0 1%;
+  margin: 0 2%;
+}
+
+article.post figure img,
+article.post figure video,
+article.post figure iframe {
+  width: 100%;
+}
+
+article.post figure iframe.yt-video {
+  height: 360px;
+}
+
+@media screen and (min-width: 481px) {
+  .wrapper {
+    width: 480px;
+  }
+
+  .flex-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  article.post {
+    width: 47%;
+    padding: 0 0.5%;
+    margin: 0 1%;
+  }
+}
+
+@media screen and (min-width: 961px) {
+  .wrapper {
+    width: 960px;
+  }
+
+  article.post {
+    width: 30%;
+    padding: 0 1.5%;
+    margin: 0;
+  }
+
+  article.post figure iframe.yt-video {
+    height: inherit;
+  }
+}
